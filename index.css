@@ -2,12 +2,17 @@
     font-size: x-large;
     display: flex;
     height: 20%;
-    margin-top: 2%;
+    margin-top: -0.5%;
+    background-color: rgb(212,79,252);
+    font-weight: 700;
+    color: white;
 }
 #titlebar{
-      margin-left: 45%;  
+      margin-left: 40%;  
       font-size: large;
+      font-weight: 700;
       display: flex;
+     
 }
 #titlebar>p{
     margin-left: 5%;
@@ -16,5 +21,5 @@
 #main{
     background-image: url("https://static.vecteezy.com/system/resources/previews/001/953/214/original/cute-colorful-easter-eggs-background-free-vector.jpg");
     background-size: cover;
-    height: 16cm;
+    height: 16.5cm;
 }
