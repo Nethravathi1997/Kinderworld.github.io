@@ -1,0 +1,15 @@
+#head{
+    font-size: x-large;
+    display: flex;
+    height: 20%;
+    margin-top: 2%;
+}
+#titlebar{
+      margin-left: 45%;  
+      font-size: large;
+      display: flex;
+}
+#titlebar>p{
+    margin-left: 5%;
+    cursor: pointer;
+}
