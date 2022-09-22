@@ -1,45 +1,121 @@
-
-#body{
+#body {
     background-image: url("https://static.vecteezy.com/system/resources/previews/001/953/214/original/cute-colorful-easter-eggs-background-free-vector.jpg");
-    background-size:cover;
+    background-size: cover;
     height: 17.5cm;
 }
 
-#head{
-    font-size: 40px;
+#head {
+    font-size: 120px;
     display: flex;
     height: 20%;
     margin-top: 0%;
     font-weight: 1000;
-    color: rgb(207,42,40);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    color: rgb(0, 102, 255);
+    margin-left: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: glow 1s ease-in-out infinite alternate;
 }
-#h1{
- color: rgb(0,115,216);
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
 }
-#h2{
-    color: rgb(81,40,170);
-   }
-   #h3{
-    color: rgb(148,52,160);
-   }
-   #h4{
-    color: rgb(46,223,169);
-   }
-   #h5{
-    color: rgb(253,97,46);
-   }
-   #h6{
-    color: rgb(69,179,2);
-   }
-#titlebar{
-      margin-left: 30%;  
-      font-size: large;
-      font-weight: 700;
-      display: flex;
-     
+
+#main {
+    margin-top: 8%;
+    margin-left: 10%;
 }
-#titlebar>p{
-    margin-left: 5%;
-    cursor: pointer;
+
+#main>button {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 25%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px 10px white;
+    margin: 3%;
+    position: relative;
+    transition: transform .2s;
 }
+
+#main>button>a {
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+#main>button:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 992px) {
+    #head {
+        font-size: xx-large;
+        height: 20%;
+        margin-top: 0%;
+        font-weight: 1000;
+        color: rgb(0, 102, 255);
+        margin-left: 10%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    #main {
+        display: grid;
+        grid-template-columns: repeat(2, 35%);
+        margin-top: 0%;
+        margin-left: 3%;
+    }
+
+    #main>button {
+        width: 80%;
+        margin-top: 0.5%;
+        margin-bottom: 15%;
+
+    }
+
+    #main>button>a {
+        font-size: x-large;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #head {
+        font-size: x-large;
+        height: 20%;
+        margin-top: 0%;
+        font-weight: 1000;
+        color: rgb(0, 102, 255);
+        margin-left: 10%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        margin-top: -20%;
+        margin-left: 2%;
+    }
+
+    #main>button {
+        width: 60%;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        margin-top: 0.5%;
+        margin-bottom: 5%;
+
+    }
+
+    #main>button>a {
+        font-size: x-large;
+    }
+    
+  }
